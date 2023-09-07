@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+
+  :root {
+    --body-bg: #fff;
+    --body-color: #ff6b81; /* Cor principal (rosa) */
+    --btn-color: #ff6b81;
+    --btn-bg: #fff;
+    --btn-bg-hover: #ff6b81;
+    --btn-color-hover: #fff;
+  }
+  
+  .dark-mode:root {
+    --body-bg: #081220;
+    --body-color: #fff;
+    --btn-color: #fff;
+    --btn-bg: #081220;
+    --btn-bg-hover: #9546e2;
+    --btn-color-hover: #081220;
+  }
+  
+  body {
+    background: rgb(255, 107, 129); /* Gradiente de fundo (rosa) */
+    background: linear-gradient(
+        0deg,
+        rgba(149, 70, 226, 1) 0%, /* Violeta */
+        rgba(255, 107, 129, 1) 100% /* Rosa */
+    );
+
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  
+  .cartao {
+    background-color: var(--body-bg);
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0px 8px 13px 0px rgba(0, 0, 0, 0.69);
+  }
+  
+  
+ 
+  
+  .switch{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    background-color: #081220;
+  }
+  
+  input:checked + .slider {
+    background-color: #9546e2;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #9546e2;
+  }
+  
+  .fa-moon-o{
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    left: 10px;
+    bottom: 0px;
+    color: #9546e2;
+  }
+  
+  .fa-sun-o{
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    left: 35.5px;
+    bottom: 0px;
+    color: #ccc;
+  }
+  
+  img#perfil {
+    max-height: 120px;
+    border: 4px solid #9546e2; /* Cor rosa */
+  }
+  
+  h3{
+    font-weight: 700;
+    color: var(--body-color) !important;
+  }
+  
+  h5{
+    font-weight: 500;
+    color: var(--body-color) !important;
+  }
+  
+  .btn-style {
+    border-radius: 50px !important;
+    color: var(--btn-color);
+    box-shadow: 0 4px 15px 0 rgba(149, 70, 226, 0.75); /* Violeta */
+    background-color: var(--btn-bg);
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    
+    transition: all .4s ease-in-out !important;
+  }
+  
+  .btn-style:hover{
+    background-color: var(--btn-bg-hover);
+    color: var(--btn-color-hover);
+  }
+  
+  .title-text{
+    color: var(--body-color);
+    font-weight: 600;
+    font-size: 18pt;
+  }
+  
+  iframe {
+    border-radius: 22px;
+    padding: 15px;
+  }
